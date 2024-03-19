@@ -1,0 +1,31 @@
+
+\chapter{Elegant\LaTeX{} Templates}
+Elegant\LaTeX{} Program developers are intended to provide you beautiful, elegant, user-friendly templates. Currently, the Elegant\LaTeX{} is composed of \href{https://github.com/ElegantLaTeX/ElegantNote}{ElegantNote}, \href{https://github.com/ElegantLaTeX/ElegantBook}{ElegantBook}, \href{https://github.com/ElegantLaTeX/ElegantPaper}{ElegantPaper}, designed for typesetting notes, books, and working papers respectively. Latest releases are strongly recommended! This guide is aimed at briefly introducing the 101 of this template. For any other question, suggestion or comment, feel free to contact us on GitHub \href{https://github.com/ElegantLaTeX/ElegantBook/issues}{issues} or email us at \email{elegantlatex2e@gmail.com}.
+
+Contact Infos:
+\begin{itemize}
+  \item GitHub: \href{https://github.com/ElegantLaTeX/}{https://github.com/ElegantLaTeX/}
+  \item CTAN: \href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
+  \item Download: \href{https://github.com/ElegantLaTeX/ElegantBook/releases}{release}, \href{https://github.com/ElegantLaTeX/ElegantBook/archive/master.zip}{latest version}
+\end{itemize}
+
+
+\section{Online Usage}
+You can visit \href{https://www.overleaf.com/}{Overleaf} to use our template online anywhere and anytime without local installation. To find our template, search \lstinline{elegantlatex} in the \lstinline{templates} or simply visit \href{https://www.overleaf.com/latex/templates?addsearch=elegantlatex}{search result}, choose the template you prefer and \lstinline{Open as Template} to own a copy yourself to edit freely. To learn more about Overleaf, please refer to \href{https://www.overleaf.com/learn}{Documentation}.
+
+
+\section{Portable Version}
+For portable version, simply download lastest ElegantBook-master from GitHub or CTAN (to be more accurate, download \lstinline{elegantbook.cls}) and save the file(s) under your working directory. This way of installation is simple and convenient, but you have to manually update \lstinline{cls} now and then.
+
+
+\section{Update Templates}
+You can use cmd/terminal to update the tlmgr itself and all the packages, the commands are:
+\begin{lstlisting}
+tlmgr update --self
+tlmgr update --all
+\end{lstlisting}
+
+To learn more, please refer to \href{https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution}{How do I update my \TeX{} distribution?}
+
+\section{Other Release Versions}
+If you are a \TeX{} Live 2018/2019/2020/2021 user and would like to update, the official solution is to uninstall the previous version. If you want to save the bother of uninstallation and re-installation, please copy \lstinline{elegantbook.cls} to the installation directory of \TeX{} Live 2022 (default: \lstinline|C:\texlive\2022\texmf-dist\tex\latex\elegantbook| ), run \lstinline{texhash} in cmd.

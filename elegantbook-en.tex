@@ -1,0 +1,52 @@
+\documentclass[11pt]{elegantbook}
+
+\title{An Elegant \LaTeX{} Template for Books}
+\subtitle{Classic Elegant\LaTeX{} Template}
+
+\author{Ethan Deng \& Liam Huang}
+\institute{Elegant\LaTeX{} Program}
+\date{March 13, 2024}
+\version{4.3}
+\bioinfo{Bio}{Computer Science and Information Technology}
+
+\extrainfo{Victory won\rq t come to us unless we go to it. }
+
+\logo{logo-blue.png}
+\cover{cover.jpg}
+
+% modify the color in the middle of titlepage
+\definecolor{customcolor}{RGB}{32,178,170}
+\colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+
+\input{chapters/en/chapter-01-en.tex}
+
+\input{chapters/en/chapter-02-en.tex}
+
+\input{chapters/en/chapter-03-en.tex}
+
+\input{chapters/en/chapter-04-en.tex}
+
+\input{chapters/en/chapter-05-en.tex}
+
+
+\nocite{en1, en2, en3}
+
+\printbibliography[heading=bibintoc, title=\ebibname]
+
+\appendix
+% \renewcommand\chaptername{\eappendix \thechapter}
+
+
+\input{chapters/en/chapter-06-en.tex}
+
+
+\end{document}

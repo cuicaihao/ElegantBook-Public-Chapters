@@ -1,0 +1,59 @@
+
+\chapter{Elegant\LaTeX{} 系列模板介绍}
+
+Elegant\LaTeX{} 项目组致力于打造一系列美观、优雅、简便的模板方便用户使用。目前由 \href{https://github.com/ElegantLaTeX/ElegantNote}{ElegantNote}，\href{https://github.com/ElegantLaTeX/ElegantBook}{ElegantBook}，\href{https://github.com/ElegantLaTeX/ElegantPaper}{ElegantPaper} 组成，分别用于排版笔记，书籍和工作论文。强烈推荐使用最新正式版本！本文将介绍本模板的一些设置内容以及基本使用方法。如果您有其他问题，建议或者意见，欢迎在 GitHub 上给我们提交 \href{https://github.com/ElegantLaTeX/ElegantBook/issues}{issues} 或者邮件联系我们。
+
+我们的联系方式如下，建议加入用户 QQ 群提问，这样能更快获得准确的反馈，加群时请备注 \LaTeX{} 或者 Elegant\LaTeX{} 相关内容。
+\begin{itemize}
+  \item 官网：\href{https://elegantlatex.org/}{https://elegantlatex.org/}（暂时歇业）
+  \item GitHub 地址：\href{https://github.com/ElegantLaTeX/}{https://github.com/ElegantLaTeX/}
+  \item Gitee 地址：\href{https://gitee.com/ElegantLaTeX}{https://gitee.com/ElegantLaTeX}
+  \item CTAN 地址：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
+  \item 下载地址：\href{https://github.com/ElegantLaTeX/ElegantBook/releases}{正式发行版}，\href{https://github.com/ElegantLaTeX/ElegantBook/archive/master.zip}{最新版}
+  \item 微博：Elegant\LaTeX{}（密码有点忘了）
+  \item 微信公众号：Elegant\LaTeX{}（不定期更新）
+  \item 用户 QQ 群：692108391（建议加群）
+  \item 邮件：\email{elegantlatex2e@gmail.com}
+\end{itemize}
+
+\section{模板安装与更新}
+
+你可以通过免安装的方式使用本模板，包括在线使用和本地（文件夹内）使用两种方式，也可以通过 \TeX{} 发行版安装使用。
+
+\subsection{在线使用模板}
+
+我们把三套模板全部上传到 \href{https://www.overleaf.com/}{Overleaf} 上了，网络便利的用户可以直接通过 Overleaf 在线使用我们的模板。使用 Overleaf 的好处是无需安装 \TeX{} Live，可以随时随地访问自己的文件。查找模板，请在 Overleaf 模板库里面搜索 \lstinline{elegantlatex} 即可，你也可以直接访问\href{https://www.overleaf.com/latex/templates?addsearch=elegantlatex}{搜索结果}。选择适当的模板之后，将其 \lstinline{Open as Template}，即可把模板存到自己账户下，然后可以自由编辑以及与别人一起协作。更多关于 Overleaf 的介绍和使用，请参考 Overleaf 的\href{https://www.overleaf.com/learn}{官方文档}。
+
+\subsection{本地免安装使用}
+
+\textbf{免安装}使用方法如下：从 GitHub 或者 CTAN 下载最新版，严格意义上只需要类文件 \lstinline{elegantbook.cls}。然后将模板文件放在你的工作目录下即可使用。这样使用的好处是，无需安装，简便；缺点是，当模板更新之后，你需要手动替换 \lstinline{cls} 文件。
+
+\subsection{发行版安装与更新}
+
+本模板测试环境为 
+\begin{enumerate}
+  \item Win10 + \TeX{} Live 2022；
+  \item Ubuntu 20.04 + \TeX{} Live 2022；
+  \item macOS Monterey + Mac\TeX{} 2022。
+\end{enumerate}
+
+\TeX Live/Mac\TeX{} 的安装请参考啸行的\href{https://github.com/OsbertWang/install-latex-guide-zh-cn/releases/}{一份简短的关于安装 \LaTeX{} 安装的介绍}。
+
+安装 \TeX{} Live 之后，安装后建议升级全部宏包，升级方法：使用 cmd 或 terminal 运行 \lstinline{tlmgr update --all}，如果 tlmgr 需要更新，请使用 cmd 运行 \lstinline{tlmgr update --self}，如果更新过程中出现了中断，请改用 \lstinline{tlmgr update --self --all --reinstall-forcibly-removed} 更新，也即
+
+\begin{lstlisting}
+tlmgr update --self 
+tlmgr update --all
+tlmgr update --self --all --reinstall-forcibly-removed
+\end{lstlisting}
+
+更多的内容请参考 \href{https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution}{How do I update my \TeX{} distribution?}
+
+\subsection{其他发行版本}
+
+由于宏包版本问题，本模板不支持 C\TeX{} 套装，请务必安装 TeX Live/Mac\TeX{}。更多关于 \TeX{} Live 的安装使用以及 C\TeX{} 与 \TeX{} Live 的兼容、系统路径问题，请参考官方文档以及啸行的\href{https://github.com/OsbertWang/install-latex-guide-zh-cn/releases/}{一份简短的关于安装 \LaTeX{} 安装的介绍}。
+
+
+\section{关于提交}
+
+出于某些因素的考虑，Elegant\LaTeX{} 项目自 2019 年 5 月 20 日开始，\textbf{不再接受任何非作者预约性质的提交}（pull request）！如果你想改进模板，你可以给我们提交 issues，或者可以在遵循协议（LPPL-1.3c）的情况下，克隆到自己仓库下进行修改。
